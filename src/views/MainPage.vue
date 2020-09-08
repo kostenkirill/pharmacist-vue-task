@@ -4,7 +4,7 @@
 		<div class="action-container">
 			<div class="container">
 				<div class="cards-container">
-					<div class="fixed fixed--center" style="z-index: 3;">
+					<div class="fixed" style="z-index: 3;">
 						<Vue2InteractDraggable
 							v-if="isVisible"
 							:interact-out-of-sight-x-coordinate="500"
@@ -26,8 +26,8 @@
 							></patient-card>
 						</Vue2InteractDraggable>
 					</div>
-					<div v-if="next" class="fixed fixed--center" style="z-index: 2;">
-						<div class="flex flex--center" style="height: 100%;">
+					<div v-if="next" class="fixed" style="z-index: 2;">
+						<div style="height: 100%;">
 							<patient-card
 								:patientName="next.name"
 								:patientAge="next.age"
